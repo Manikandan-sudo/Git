@@ -1,0 +1,17 @@
+class Solution {
+    public boolean isValid(String s) {
+    int len=s.length();
+    boolean ans = false;
+    int arr[] = new int[256];
+    for(int i=0;i<len;i++)
+    {
+        int val=s.charAt(i);
+        arr[val]++;
+    }
+        if(arr[123] == arr[125] && arr[40] == arr[41] && arr[91] == arr[93])
+        {
+           ans = true;
+        }
+        return ans;
+    }
+}
